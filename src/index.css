@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap');
+@tailwind base;
+html {
+    scroll-behavior: smooth;
+  }
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap'); */
+
+/* @layer base {
+    li {
+        @apply p-4
+    }
+} */
+
+:root{
+    font-family: 'Poppins', sans-serif;
+     
+
+}
+
+ body{
+    background: #0F172A;
+
+}
+
+/* li{
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+} */
+
+/* li:hover::before{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 100%;
+    background: #2a68ff;
+    right: 100%;
+    bottom: -10px;
+    color: #2a68ff;
+}  */
+
+ .icon{
+    cursor: pointer;
+
+}
+/* .card{
+    background: #000;
+} */
+
+ /* :root .grid {
+    @apply grid gap-2.5 grid-cols-[repeat(auto-fill,minmax(186px,1fr))];
+  }  */
+  .active{
+    color: blue;
+  }

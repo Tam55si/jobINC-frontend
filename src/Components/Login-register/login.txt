@@ -1,0 +1,77 @@
+// <div className="p-[5rem] mb-4  rounded-[10px] gap-8  m-auto">
+        //     <h1 className='text-center text-gray-400 p-4 text-2xl'>Please Login here</h1>
+        //     <div className='grid grid-cols-2 bg-[#C7D2FE] rounded-[10px] p-[2rem] mb-2'>
+        //         <div className='m-[1rem]'>
+
+        //             <img src={log} className='w-[35%]' alt='' />
+        //         </div>
+
+        //         <form onSubmit={onSubmit} className='grid gap-2 mt-6 m-[1rem]'>
+
+
+        //             <div className='grid grid-cols-2'>
+        //                 <label htmlFor='username'>User Name: </label>
+        //                 <input type='text' value={username} id='username' onChange={(e) => setUsername(e.target.value)} className='bg-[#C4B5FD] h-[40%]' />
+        //             </div>
+        //             <div className='grid grid-cols-2'>
+        //                 <label htmlFor='password'>Password: </label>
+        //                 <input type='password' value={password} id='password' onChange={(e) => setPassword(e.target.value)} className='bg-[#C4B5FD] h-[40%]' />
+        //             </div>
+        //             <button type='submit' className='hover:bg-blueColor hover:text-white cursor-pointer h-[40%] bg-blue-400 rounded-lg'>Login</button>
+
+        //         </form>
+
+        //         <button className='hover:bg-blueColor hover:text-white cursor-pointer h-[40%] bg-blue-400 rounded-lg'><Link to="/register">Register</Link></button>
+        //     </div>
+
+        // </div>
+
+<div className='flex mb-14 flex-col items-center justify-center w-full flex-1 px-20 text-center min-h-screen py-40'>
+                <div className='bg-[#C4B5FD] rounded-2xl shadow-2xl flex w-2/3 max-w-4xl'> */}
+                     <div className='w-3/5 p-5'>
+                        <p>Sign in Section</p>
+                        <form onSubmit={onSubmit} >
+                            <div className=''>
+                                <label htmlFor='username'>User Name: </label>
+                                <input type='text' value={username} id='username' onChange={(e) => setUsername(e.target.value)} />
+                            </div>
+                            <div className=''>
+                                <label htmlFor='password'>Password: </label>
+                                <input type='password' value={password} id='password' onChange={(e) => setPassword(e.target.value)} />
+                            </div>
+                            <button type='submit' className='hover:bg-blueColor hover:text-white cursor-pointer bg-blue-400 rounded-lg'>Login</button>
+                        </form>
+                    </div> 
+ previous form
+                    <div className='w-3/5 py-32 px-12 bg-[#C4B5FD] rounded-xl'>
+
+                        <h2 className='text-3xl mb-4'>Login here</h2>
+                        <form onSubmit={onSubmit}>
+                            <div className='mt-5'>
+                                <input type='text' placeholder='User Name' className='border border-gray-400 py-1 px-2 w-full' value={username} id='username' onChange={(e) => setUsername(e.target.value)} />
+                            </div>
+                            <div className='mt-5'>
+                                <input type='password' placeholder='Password' className='border border-gray-400 py-1 px-2 w-full' value={password} id='password' onChange={(e) => setPassword(e.target.value)} />
+                            </div>
+                            <div className='mt-5'>
+                                <input type='checkbox' className='border border-gray-400' />
+                                <span> Keep me logged in </span>
+                            </div>
+                            <div className='mt-5'>
+                                <button className='w-full bg-blue-500 py-3 text-center text-white hover:text-blue-500 hover:bg-white'>Login</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div className='w-2/5 bg-[#C7D2FE] text-black rounded-tr-2xl rounded-br-2xl py-8 px-12'>
+            <img src={log} alt='' className='' />
+            <h2 className='text-3xl font-bold mb-2'>
+                Hello Friend!
+            </h2>
+            <div className='border-2 w-10 border-white inline-block mb-2'></div>
+            <p className='mb-10'>Click here to register.</p>
+            <button className='border-2 rounded-2xl p-2  border-white inline-block mb-2 font-semibold hover:bg-white hover:text-blue-500'><Link to="/register">Register</Link></button>
+
+        </div>
+                </div >
+            </div >
