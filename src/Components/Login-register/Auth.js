@@ -26,7 +26,7 @@ const Login = () => {
     const onSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post("http://jobincbackend-env.eba-e5fk3z74.us-east-1.elasticbeanstalk.com/auth/login", { username, password });
+            const response = await axios.post("https://jobinc-backend.onrender.com/auth/login", { username, password });
 
             // alert(`Welcome Back ${username}`);
             setCookies("access_token", response.data.token);

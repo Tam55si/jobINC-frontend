@@ -13,7 +13,7 @@ export default function JobDescription() {
     useEffect(() => {
         const fetchJobs = async () => {
             try {
-                await axios.get(`http://jobincbackend-env.eba-e5fk3z74.us-east-1.elasticbeanstalk.com/jobpost/${id}`)
+                await axios.get(`https://jobinc-backend.onrender.com/jobpost/${id}`)
                     .then((res) => res.data).then((data) => setJobInfo(data.jobInfo))
                 // .then(response => {
                 //     response.json().then(jobInfo => {

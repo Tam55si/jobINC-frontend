@@ -18,7 +18,7 @@ function JobsData() {
     useEffect(() => {
         const fetchJobs = async () => {
             try {
-                await axios.get("http://jobincbackend-env.eba-e5fk3z74.us-east-1.elasticbeanstalk.com/jobpost").then((res) => res.data).then((data) => setJobs(data.jobs))
+                await axios.get("https://jobinc-backend.onrender.com/jobpost").then((res) => res.data).then((data) => setJobs(data.jobs))
 
 
             } catch (error) {

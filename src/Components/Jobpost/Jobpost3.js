@@ -39,7 +39,7 @@ function Jobpost3() {
         event.preventDefault();
         try {
             await axios.post(
-                "http://jobincbackend-env.eba-e5fk3z74.us-east-1.elasticbeanstalk.com/jobpost",
+                "https://jobinc-backend.onrender.com/jobpost",
                 { ...jobs },
                 {
                     headers: { authorization: cookies.access_token },

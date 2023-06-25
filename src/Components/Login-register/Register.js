@@ -140,7 +140,7 @@ function Register() {
     const onSubmit = async (event) => {
         event.preventDefault();
         try {
-            await axios.post("http://jobincbackend-env.eba-e5fk3z74.us-east-1.elasticbeanstalk.com/auth/register", { firstname, lastname, emailid, username, password, accounttype });
+            await axios.post("https://jobinc-backend.onrender.com/auth/register", { firstname, lastname, emailid, username, password, accounttype });
             toast.success("Registration Completed! Now Login.");
             // alert("Registration Completed! Now Login.");
             navigate("/login");

@@ -71,7 +71,7 @@ function EditJobs() {
 
     // console.log(id);
     useEffect(() => {
-        axios.get(`http://jobincbackend-env.eba-e5fk3z74.us-east-1.elasticbeanstalk.com/jobpost/${id}`)
+        axios.get(`https://jobinc-backend.onrender.com/jobpost/${id}`)
             .then(jobs => {
                 console.log("jobs", jobs);
                 setJobs(jobs.data.job);
@@ -82,7 +82,7 @@ function EditJobs() {
 
     const sendRequest = async () => {
         console.log("sendReq");
-        await axios.put(`http://jobincbackend-env.eba-e5fk3z74.us-east-1.elasticbeanstalk.com/jobpost/${id}`, {
+        await axios.put(`https://jobinc-backend.onrender.com/jobpost/${id}`, {
             imageUrl: String(jobs.imageUrl),
             title: String(jobs.title),
             postDate: String(jobs.postDate),

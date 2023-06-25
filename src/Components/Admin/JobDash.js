@@ -13,7 +13,7 @@ function JobDash() {
     useEffect(() => {
         const fetchJobs = async () => {
             try {
-                await axios.get("http://jobincbackend-env.eba-e5fk3z74.us-east-1.elasticbeanstalk.com/jobpost").then((res) => res.data).then((data) => setJobs(data.jobs))
+                await axios.get("https://jobinc-backend.onrender.com/jobpost").then((res) => res.data).then((data) => setJobs(data.jobs))
 
                 console.log(jobs);
             } catch (error) {
@@ -33,7 +33,7 @@ function JobDash() {
 
 
     const deleteHandler = (id) => {
-        axios.delete(`http://jobincbackend-env.eba-e5fk3z74.us-east-1.elasticbeanstalk.com/jobpost/${id}`)
+        axios.delete(`https://jobinc-backend.onrender.com/jobpost/${id}`)
 
             .then((res) => {
                 console.log(id);

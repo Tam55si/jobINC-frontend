@@ -34,7 +34,7 @@ function AddBlogs() {
         event.preventDefault();
         try {
             await axios.post(
-                "http://jobincbackend-env.eba-e5fk3z74.us-east-1.elasticbeanstalk.com/blogs",
+                "https://jobinc-backend.onrender.com/blogs",
                 { ...blogs },
                 {
                     headers: { authorization: cookies.access_token },

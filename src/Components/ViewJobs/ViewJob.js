@@ -12,7 +12,7 @@ function ViewJob() {
 
         const fetchJobs = async (id) => {
             try {
-                const response = await axios.get(`http://jobincbackend-env.eba-e5fk3z74.us-east-1.elasticbeanstalk.com/jobpost/${id}`);
+                const response = await axios.get(`https://jobinc-backend.onrender.com/jobpost/${id}`);
                 setJobData(response.data);
             } catch (error) {
                 console.error(error);

@@ -14,7 +14,7 @@ function Blog() {
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
-                await axios.get("http://jobincbackend-env.eba-e5fk3z74.us-east-1.elasticbeanstalk.com/blogs").then((res) => res.data).then((data) => setBlogs(data.blogs))
+                await axios.get("https://jobinc-backend.onrender.com/blogs").then((res) => res.data).then((data) => setBlogs(data.blogs))
 
                 console.log(blogs);
             } catch (error) {

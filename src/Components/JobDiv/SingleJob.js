@@ -40,7 +40,7 @@ const SingleJob = (props) => {
     const applyJob = async (jobID) => {
         console.log(jobID)
         try {
-            const response = await axios.put("http://jobincbackend-env.eba-e5fk3z74.us-east-1.elasticbeanstalk.com/jobpost", {
+            const response = await axios.put("https://jobinc-backend.onrender.com/jobpost", {
                 jobID,
                 userID,
             });

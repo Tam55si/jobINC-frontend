@@ -29,7 +29,7 @@ function Profile() {
     useEffect(() => {
         const fetchUser = async () => {
             try {
-                await axios.get(`http://jobincbackend-env.eba-e5fk3z74.us-east-1.elasticbeanstalk.com/auth/${userID}`)
+                await axios.get(`https://jobinc-backend.onrender.com/auth/${userID}`)
                     .then((res) => res.data)
                     // .then((data) => console.log(data))
                     .then((data) => setUsers(data.user))
